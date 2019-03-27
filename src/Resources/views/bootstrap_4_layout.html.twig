@@ -8,8 +8,8 @@
 
             <li class="nav-item">
                 <a href="#{{ translationsFields.vars.id }}_a2lix_translations-fields" class="nav-link {% if app.request.locale == locale %}active{% endif %}" data-toggle="tab" role="tab">
-                    {{ translationsFields.vars.label|default(locale|humanize)|trans }}
-                    {% if form.vars.default_locale == locale %}{{ '[Default]'|trans }}{% endif %}
+                    {{ translationsFields.vars.label|default(locale|humanize) }}
+                    {* {% if form.vars.default_locale == locale %}{{ '[Default]'|trans }}{% endif %} *}
                     {% if translationsFields.vars.required %}*{% endif %}
                 </a>
             </li>
